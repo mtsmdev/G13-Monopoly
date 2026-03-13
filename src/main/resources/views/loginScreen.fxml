@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1220.0" style="-fx-background-image: url(images/login/loginAchtergrond.png); " xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.StartMenuView">
+   <ImageView fitHeight="800.0" fitWidth="800.0" layoutX="-200" layoutY="-200">
+      <Image url="@../images/login/loginLayout.png" />
+      <effect>
+         <ColorAdjust brightness="-0.52" contrast="-0.2" hue="0.86" saturation="0.02" />
+      </effect>
+   </ImageView>
+   <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" translateX="-75.0" translateY="-110.0">
+
+      <left>
+         <AnchorPane prefHeight="400.0" prefWidth="110.0" BorderPane.alignment="CENTER">
+            <ImageView fitHeight="160.0" fitWidth="133.0" translateX="290.0" translateY="315.0">
+               <Image url="@../images/login/duopoly_logo_wit.png" />
+            </ImageView>
+         </AnchorPane>
+      </left>
+      <center>
+         <AnchorPane layoutX="10.0" prefHeight="200.0" prefWidth="250.0" translateX="-10.0" BorderPane.alignment="CENTER">
+      
+      
+            <Label focusTraversable="false" layoutX="150.0" layoutY="155.0" styleClass="login_text_title" stylesheets="@../styles/main.css" text="Code">
+            </Label>
+            <TextField fx:id="userName" layoutX="150.0" layoutY="116.0" prefHeight="30.0" prefWidth="180.0" promptText="Username" styleClass="login_text" stylesheets="@../styles/main.css" />
+      
+            <TextField fx:id="joinCode" layoutX="150.0" layoutY="184.0" prefHeight="30.0" prefWidth="180.0" promptText="Join Code" styleClass="login_text" stylesheets="@../styles/main.css" />
+            <Button focusTraversable="false" layoutX="50.0" layoutY="258.0" mnemonicParsing="false" onAction="#onJoinClick" prefHeight="22.0" prefWidth="160.0" style="-fx-background-color: #198156;" text="Join" textFill="#ffffff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button focusTraversable="false" layoutX="270.0" layoutY="258.0" mnemonicParsing="false" onAction="#onCreateClick" prefHeight="43.0" prefWidth="160.0" style="-fx-background-color: #198156;" text="New" textFill="#ffffff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+      
+            <Label focusTraversable="false" layoutX="150.0" layoutY="82.0" styleClass="login_text_title" stylesheets="@../styles/main.css" text="Username">
+            </Label>
+            <Label layoutX="224.0" layoutY="270.0" text="OR" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="21.0" />
+               </font>
+            </Label>
+         </AnchorPane>
+      </center>
+   </BorderPane>
+
+   <HBox fx:id="overlay" alignment="CENTER" prefHeight="600" prefWidth="400" style="-fx-background-color: rgba(0,0,0, 0.4)" visible="false">
+      <Label style="-fx-text-fill: white; -fx-font-size: 20pt">Loading...</Label>
+   </HBox>
+</StackPane>

@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,700&display=swap');
+
+
+Text {
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#game{
+    -fx-background-image: url("../images/spel_achtergrond/background.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+
+/*players*/
+.player {
+    -fx-background-repeat: no-repeat no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: contain;
+}
+
+.player1 {
+    -fx-background-image: url("../images/character/player1.png");
+}
+
+.player2 {
+    -fx-background-image: url("../images/character/player2.png");
+}
+
+.player3 {
+    -fx-background-image: url("../images/character/player3.png");
+}
+
+.player4 {
+    -fx-background-image: url("../images/character/player4.png");
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*                          Plaats Icon bij kaarten                          */
+/*---------------------------------------------------------------------------*/
+
+
+#image_place{
+    -fx-alignment: center;
+}
+
+/*---------------------------------------------------------------------------*/
+/*                          Station Icons op het bord                        */
+/*---------------------------------------------------------------------------*/
+
+
+#station1{
+    -fx-background-image: url("../images/kaarten/Station/ns_logo.png");
+    -fx-background-size: 30px 30px;
+    -fx-background-repeat: no-repeat;
+}
+
+#station2{
+    -fx-background-image: url("../images/kaarten/Station/an_ov_chipkaart.png");
+    -fx-background-size: 30px 20px;
+    -fx-background-repeat: no-repeat;
+}
+
+#station3{
+    -fx-background-image: url("../images/kaarten/Station/htm.png");
+    -fx-background-size: 30px 30px;
+    -fx-background-repeat: no-repeat;
+}
+
+#station4{
+    -fx-background-image: url("../images/kaarten/Station/pr_ov_chipkaart.png");
+    -fx-background-size: 30px 20px;
+    -fx-background-repeat: no-repeat;
+}
+
+/*---------------------------------------------------------------------------*/
+/*                          Belasting Icons op het bord                      */
+/*---------------------------------------------------------------------------*/
+
+#belasting{
+    -fx-background-image: url("../images/kaarten/belasting.png");
+    -fx-background-size: 30px 20px;
+    -fx-background-repeat: no-repeat;
+}
+
+/*---------------------------------------------------------------------------*/
+/*         Corners op het bord   {start, parkeer, studeren, ga Studeren}     */
+/*---------------------------------------------------------------------------*/
+
+.cornerTile {
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+}
+
+.gaStuderen{
+    -fx-background-image: url("../images/kaarten/Corner/gaStuderen.jpg");
+}
+
+.studeren{
+    -fx-background-image: url("../images/kaarten/Corner/studeren.jpg");
+}
+
+.fietsenStalling{
+    -fx-background-image: url("../images/kaarten/Corner/fiets_parkeren.jpg");
+}
+
+.start{
+    -fx-background-image: url("../images/kaarten/Corner/start.jpg");
+}
+
+.property {
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+}
+
+.huis {
+    -fx-pref-height: 10px;
+    -fx-pref-width: 10px;
+    -fx-background-image: url("../images/kaarten/Huis_Hotel/green_book.png");
+    -fx-background-size: 10px 12px;
+    -fx-background-repeat: no-repeat;
+}
+
+.hotel {
+    -fx-background-image: url("../images/kaarten/Huis_Hotel/red_book.png");
+}
+
+/*ui*/
+
+.h1 {
+    -fx-fill: white;
+    -fx-font-size: 30px;
+}
+
+.startButton {
+    -fx-pref-width: 200;
+    -fx-pref-height: 80;
+    -fx-background-color: green;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+}
+
+.regelButton {
+    -fx-pref-width: 150;
+    -fx-pref-height: 75;
+    -fx-background-color: orange;
+    -fx-font-size: 17px;
+    -fx-text-fill: #ffffff;
+}
+
+.sign{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/game_ui/sign.png");
+    -fx-background-size: 200px, 180px;
+    -fx-background-repeat: no-repeat;
+}
+
+.sign Text {
+    -fx-text-alignment: center;
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'Fredoka One', cursive;
+}
+
+.list_player{
+    -fx-alignment: center;
+    -fx-background-size: 200px, 150px;
+    -fx-background-repeat: no-repeat;
+}
+
+.list_player1 {
+    -fx-background-image: url("../images/player_list/list_red_player.png");
+}
+
+.list_player2 {
+    -fx-background-image: url("../images/player_list/list_blauw_player.png");
+}
+
+.list_player3 {
+    -fx-background-image: url("../images/player_list/list_groen_player.png");
+}
+
+.list_player4 {
+    -fx-background-image: url("../images/player_list/list_geel_player.png");
+}
+
+.list_player_text {
+    -fx-text-alignment: center;
+    -fx-font-size: 12px;
+    -fx-font-family: 'Fredoka One', cursive;
+}
+
+
+
+
+/*---------------------------------------------------------------------------*/
+/*                         Huizen op het Bord                                */
+/*---------------------------------------------------------------------------*/
+
+
+#ipohbo_huis1, #ipohbo_huis2, #ipohbo_huis3, #ipohbo_huis4,
+#iipsene_huis1, #iipsene_huis2, #iipsene_huis3, #iipsene_huis4,
+#iarch_huis1, #iarch_huis2, #iarch_huis3, #iarch_huis4,
+#irdb_huis1, #irdb_huis2, #irdb_huis3, #irdb_huis4,
+#inet_huis1, #inet_huis2, #inet_huis3, #inet_huis4,
+#ipodm_huis1, #ipodm_huis2, #ipodm_huis3, #ipodm_huis4,
+#ipomedt_huis1, #ipomedt_huis2, #ipomedt_huis3, #ipomedt_huis4,
+#ioo1_huis1, #ioo1_huis2, #ioo1_huis3, #ioo1_huis4,
+#iipr_huis1, #iipr_huis2, #iipr_huis3, #iipr_huis4,
+#iwder_huis1, #iwder_huis2, #iwder_huis3, #iwder_huis4,
+#icommpr_huis1, #icommpr_huis2, #icommpr_huis3, #icommpr_huis4,
+#iprop_huis1, #iprop_huis2, #iprop_huis3, #iprop_huis4,
+#islpr_huis1, #islpr_huis2, #islpr_huis3, #islpr_huis4,
+#ipose_huis1, #ipose_huis2, #ipose_huis3, #ipose_huis4,
+#iiwis_huis1, #iiwis_huis2, #iiwis_huis3, #iiwis_huis4,
+#iooa_huis1, #iooa_huis2, #iooa_huis3, #iooa_huis4,
+#iifito_huis1, #iifito_huis2, #iifito_huis3, #iifito_huis4,
+#ipofit_huis1, #ipofit_huis2, #ipofit_huis3, #ipofit_huis4,
+#iibui_huis1, #iibui_huis2, #iibui_huis3, #iibui_huis4,
+#iibpm_huis1, #iibpm_huis2, #iibpm_huis3, #iibpm_huis4,
+#iipforit_huis1, #iipforit_huis2, #iipforit_huis3, #iipforit_huis4 {
+
+    -fx-background-image: url("../images/kaarten/Huis_Hotel/green_book.png");
+    -fx-background-size: 10px 12px;
+    -fx-background-repeat: no-repeat;
+}
+
+/*---------------------------------------------------------------------------*/
+/*                         Hotels op het bord                                */
+/*---------------------------------------------------------------------------*/
+
+#ipohbo_huis5, #iipsene_huis5, #iarch_huis5, #irdb_huis5, #inet_huis5, #ipodm_huis5,
+#ipomedt_huis5, #ioo1_huis5, #iipr_huis5, #iwder_huis5, #icommpr_huis5, #iprop_huis5,
+#islpr_huis5, #ipose_huis5, #iiwis_huis5, #iooa_huis5, #iifito_huis5, #ipofit_huis5,
+#iibui_huis5, #iibpm_huis5, #iipforit_huis5 {
+    -fx-background-image: url("../images/kaarten/Huis_Hotel/red_book.png");
+    -fx-background-size: 10px 12px;
+    -fx-background-repeat: no-repeat;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*                         Straat View Dialog                                */
+/*---------------------------------------------------------------------------*/
+
+
+/* Huis icon */
+#huis{
+    -fx-background-image: url("../images/kaarten/Huis_Hotel/green_book.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+/* Hotel icon */
+#hotel{
+    -fx-background-image: url("../images/kaarten/Huis_Hotel/red_book.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+
+
+#straatName{
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 15px;
+}
+
+#straat_prijs{
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+#straatDialog{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/game_ui/pannel.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+#straat_container{
+    -fx-background-color: #fff;
+    -fx-border-color: #DB7422;
+    -fx-border-radius: 5px;
+    -fx-border-width: 3px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+#huisView{
+    -fx-padding: 5px;
+}
+
+#game_button{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/game_ui/game_button.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+#game_button_geel{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/game_ui/button/geel_button.png");
+    -fx-background-size: 200px, 40px;
+    -fx-background-repeat: no-repeat;
+}
+
+#game_button_groen{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/game_ui/button/groen_button.png");
+    -fx-background-size: 200px, 40px;
+    -fx-background-repeat: no-repeat;
+}
+
+#game_button_blauw{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/game_ui/button/blauw_button.png");
+    -fx-background-size: 200px, 40px;
+    -fx-background-repeat: no-repeat;
+}
+
+#game_button_red{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/game_ui/button/red_button.png");
+    -fx-background-size: 200px, 40px;
+    -fx-background-repeat: no-repeat;
+}
+
+#game_button_roze{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/game_ui/button/roze_button.png");
+    -fx-background-size: 200px, 40px;
+    -fx-background-repeat: no-repeat;
+}
+
+#button_text {
+    -fx-text-alignment: center;
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'Fredoka One', cursive;
+}
+
+#kopen_bieden_container{
+    -fx-alignment: center;
+}
+
+
+
+/*---------------------------------------------------------------------------*/
+/*                       Outlook, Loterij Container                          */
+/*---------------------------------------------------------------------------*/
+
+#loterij_box{
+    -fx-background-image: url("../images/kaarten/Box_kaarten/loterij_box.png");
+    -fx-background-size: 310px 190px;
+    -fx-background-repeat: no-repeat;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1.5px;
+    -fx-border-color: #000000;
+}
+
+#outlook_box{
+    -fx-background-image: url("../images/kaarten/Box_kaarten/outlook_box.png");
+    -fx-background-size: 310px 190px;
+    -fx-background-repeat: no-repeat;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1.5px;
+    -fx-border-color: #000000;
+}
+
+/*---------------------------------------------------------------------------*/
+/*                          Outlook, loterij icons                           */
+/*---------------------------------------------------------------------------*/
+
+#loterij{
+    -fx-background-image: url("../images/kaarten/Box_kaarten/postcode_loterij.png");
+    -fx-background-size: 45px 40px;
+    -fx-background-repeat: no-repeat;
+}
+
+#outlook{
+    -fx-background-image: url("../images/kaarten/Box_kaarten/outlook.png");
+    -fx-background-size: 35px 30px;
+    -fx-background-repeat: no-repeat;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*                          Dice, Dobbelstenen                               */
+/*---------------------------------------------------------------------------*/
+
+/* Dobbelsteen Nummer 1 */
+#d1_dice1, #d2_dice1{
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 9px;
+    -fx-alignment: center;
+    -fx-background-image: url("../images/dice/dice1.png");
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Dobbelsteen Nummer 2 */
+#d1_dice2, #d2_dice2{
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 9px;
+    -fx-alignment: center;
+    -fx-background-image: url("../images/dice/dice2.png");
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Dobbelsteen Nummer 3 */
+#d1_dice3, #d2_dice3{
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 9px;
+    -fx-alignment: center;
+    -fx-background-image: url("../images/dice/dice3.png");
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Dobbelsteen Nummer 4 */
+#d1_dice4, #d2_dice4{
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 9px;
+    -fx-alignment: center;
+    -fx-background-image: url("../images/dice/dice4.png");
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Dobbelsteen Nummer 5 */
+#d1_dice5, #d2_dice5{
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 9px;
+    -fx-alignment: center;
+    -fx-background-image: url("../images/dice/dice5.png");
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Dobbelsteen Nummer 6 */
+#d1_dice6, #d2_dice6{
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 9px;
+    -fx-alignment: center;
+    -fx-background-image: url("../images/dice/dice6.png");
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*                         Dobbelsteen Animation (GIF)                       */
+/*---------------------------------------------------------------------------*/
+
+
+#dice_animation1{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/dice/dice_animation/dice1_animation.gif");
+    -fx-background-size: 120px 120px;
+    -fx-background-repeat: no-repeat;
+    -fx-translate-x: 50px;
+}
+
+#dice_animation2{
+    -fx-alignment: center;
+    -fx-background-image: url("../images/dice/dice_animation/dice2_animation.gif");
+    -fx-background-size: 120px 120px;
+    -fx-background-repeat: no-repeat;
+    -fx-translate-x:-14px;
+}
+
+
+.dialog{
+    /*-fx-text-alignment: center;*/
+    -fx-padding: 200px 0px 0px 0px;
+    -fx-alignment: center;
+    -fx-background-image: url("/images/game_ui/pannel.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 500px 500px;
+    -fx-pref-width: 500px;
+    -fx-pref-height: 500px;
+
+}
+
+.kaartTitle{
+    -fx-font-family: 'Titan One', cursive;
+    -fx-font-size: 28px;
+}
+
+
+.kaartMsg{
+    -fx-font-family: 'Fira Sans', sans-serif;
+    -fx-font-size: 21px;
+}
+
+.button_accept{
+    -fx-background-color: #e1831b;
+    -fx-border-color: #a45e0a;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-font-family: 'Titan One', cursive;
+    -fx-text-fill: #ffffff;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 170px;
+    -fx-font-size: 16px;
+}
+
+.straat{
+    -fx-pref-width: 200px;
+    -fx-padding: 0px 20px 0px 20px;
+}
+
+.headStreet{
+    -fx-pref-width: 180px;
+    -fx-pref-height: 50px;
+    -fx-alignment: center;
+    /*-fx-background-color: #DD3322FF;*/
+    -fx-border-width: 2px;
+    -fx-border-color: #000000;
+    -fx-border-radius: 4px 4px 0px 0px;
+    /*-fx-background-radius: 4px 4px 0px 0px;*/
+}
+
+.bodyStreet{
+    -fx-padding: 5px;
+    -fx-pref-width: 180px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000000;
+    -fx-border-width: 0px 2px 2px 2px;
+    -fx-border-radius: 0px 4px 4px 4px;
+    -fx-background-radius: 0px 4px 4px 4px;
+}
+
+.straatNaam{
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'Titan One', cursive;
+    -fx-font-size: 16px;
+}
+.prijsStraat{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Fredoka One', cursive;
+}
+.prijs{
+    -fx-translate-x: 80;
+    -fx-translate-y: 5;
+    -fx-font-family: 'Fredoka One', cursive;
+}
+
+
+.login_text{
+    -fx-pref-width: 200px;
+    -fx-pref-height: 35px;
+    -fx-font-size: 16px;
+    -fx-text-fill: #198156;
+    -fx-font-family: 'Ubuntu', sans-serif;
+}
+
+.login_text_title{
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'Titan One', cursive;
+}
+
+

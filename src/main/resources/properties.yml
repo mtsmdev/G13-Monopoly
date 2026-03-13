@@ -1,0 +1,44 @@
+# CORNER, type, name, classname
+# PROPERTY, name, price, rent, color
+# UTLITY, name, type
+
+properties:
+  - "CORNER, START, Start, start"
+  - "PROPERTY, Daeventer, 60, 30, DARKBLUE"
+  - "PROPERTY, Engschede, 60, 30, DARKBLUE"
+  - "UTILITY, Algemeen|Fonds, ALGEMEENFONDS"
+  - "PROPERTY, Schiphol, 200, 100, BLACK"
+  - "PROPERTY, Harns, 100, 50, RED"
+  - "UTILITY, Belasting, BELASTING"
+  - "PROPERTY, Vinna, 100, 50, RED"
+  - "PROPERTY, LWD, 100, 50, RED"
+  # new row
+  - "CORNER, STUDEREN, Studeren, studeren"
+  - "PROPERTY, Eindje, 140, 70, PURPLE"
+  - "PROPERTY, Tilly, 140, 70, PURPLE"
+  - "UTILITY, Kans|kaart, KANS"
+  - "PROPERTY, Bosco, 160, 80, PURPLE"
+  - "UTILITY, Belasting, BELASTING"
+  - "PROPERTY, Ally, 180, 90, YELLOW"
+  - "PROPERTY, Haven, 200, 100, BLACK"
+  - "PROPERTY, L-Town, 200, 100, YELLOW"
+  # new row
+  - "CORNER, FIETSENSTALLING, Fietsen|stalling, fietsenStalling"
+  - "PROPERTY, Maasje, 220, 100, LIGHTBLUE"
+  - "UTILITY, Algemeen|Fonds, ALGEMEENFONDS"
+  - "PROPERTY, Outlet, 220, 100, LIGHTBLUE"
+  - "PROPERTY, Station, 200, 100, BLACK"
+  - "PROPERTY, 077, 240, 120, LIGHTBLUE"
+  - "PROPERTY, Nimma, 260, 130, PINK"
+  - "UTILITY, Belasting, BELASTING"
+  - "PROPERTY, Arra, 280, 140, PINK"
+  # new row
+  - "CORNER, GASTUDEREN, Ga|Studeren, gaStuderen"
+  - "PROPERTY, Lidda, 300, 150, GREEN"
+  - "PROPERTY, Agga, 300, 150, GREEN"
+  - "UTILITY, Kans|kaart, KANS"
+  - "PROPERTY, Roffa, 320, 160, GREEN"
+  - "PROPERTY, Dom|Toren, 200, 100, BLACK"
+  - "PROPERTY, Lemma, 350, 175, GRAY"
+  - "UTILITY, Belasting, BELASTING"
+  - "PROPERTY, Damsko, 400, 200, GRAY"

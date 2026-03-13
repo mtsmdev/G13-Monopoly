@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="game" prefHeight="800.0" prefWidth="1220" stylesheets="@../styles/main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.GameView">
+   <StackPane layoutX="200.0">
+      <AnchorPane fx:id="board" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #b1dbaf;" />
+      <AnchorPane fx:id="playerLayer" prefWidth="800" prefHeight="800"/>
+      <AnchorPane fx:id="diceLayer" prefWidth="800" prefHeight="800"/>
+      <AnchorPane fx:id="dialogLayer" prefWidth="800" prefHeight="800" visible="false"/>
+
+      <VBox fx:id="overlay" alignment="CENTER" prefHeight="800" prefWidth="800" style="-fx-background-color: rgba(0,0,0,0.6)">
+         <Text styleClass="h1" text="Players:" />
+         <Button fx:id="startGame" styleClass="startButton" text="Start" translateY="20" />
+      </VBox>
+      <VBox fx:id="overlayFinished" visible="false" alignment="CENTER" prefHeight="800" prefWidth="800" style="-fx-background-color: rgba(0,0,0,0.6)">
+         <Text fx:id="playerWon" styleClass="h1" text="Player Won!" />
+         <Button fx:id="leaveGame" styleClass="startButton" text="exit" translateY="20" />
+      </VBox>
+   </StackPane>
+   <AnchorPane prefWidth="200">
+      <StackPane prefHeight="180.0" prefWidth="200" styleClass="sign">
+         <Text fx:id="gameID" fill="WHITE" layoutY="140" text="000000" translateY="30" />
+      </StackPane>
+   </AnchorPane>
+   <AnchorPane layoutX="1010" prefWidth="200">
+      <VBox>
+         <StackPane prefHeight="180.0" prefWidth="200" styleClass="sign">
+            <Text fx:id="wieSpeelt" fill="WHITE" layoutY="140" text="Player 1" translateY="30" />
+         </StackPane>
+         <VBox fx:id="playerList" />
+      </VBox>
+   </AnchorPane>
+   <Button fx:id="spelregels" layoutY="192.0" styleClass="regelButton" text="Spelregels" />
+</AnchorPane>

@@ -1,0 +1,5 @@
+.idea
+target
+/monopoly.iml
+.DS_Store
+src/main/resources/serviceAccountKey/key.json
