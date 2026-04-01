@@ -1,5 +1,19 @@
 # Duopoly / Monopoly Project
 
+## Screenshots
+
+### Main menu
+
+![Duopoly main menu with options to create or join a game](docs/images/main-menu.png)
+
+### Gameplay
+
+![A two-player game with Moatasem and Jasper](docs/images/gameplay.png)
+
+### Property purchase
+
+![Moatasem viewing the purchase dialog for Tilly](docs/images/property-purchase.png)
+
 ## Nederlands
 
 Dit project is een Monopoly-geinspireerd spel met een humoristische, satirische stijl.
